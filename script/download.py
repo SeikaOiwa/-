@@ -46,7 +46,7 @@ def input_excel(new_form,f_path,tmp_path):
 f_path = os.getcwd()
 tmp_path = f'{f_path}/雛型/雛型.xlsx'
 
-df = pd.read_csv('室長パトロール結果.csv')
+df = pd.read_csv('室長パトロール.csv')
 df2 = df.loc[:,["field_0","Title","OData__x90e8__x5c4b__x540d_","field_3","field_4","field_2"]]
 df2.columns = [["点検月","指摘事項","対象実験室","担当者","対応結果","対応詳細",]]
 
